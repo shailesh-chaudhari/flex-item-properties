@@ -1,0 +1,123 @@
+body {
+    margin: 0;
+}
+
+#container1 {
+    width: 100vw;
+    background-color: lightblue;
+    padding: 32px;
+    box-sizing: border-box;
+    margin-bottom: 24px;
+    display: flex;
+
+}
+
+.items1 {
+    background-color: lightcoral;
+    font-size: 24px;
+    padding: 24px;
+    margin-right: 16px;
+    margin-bottom: 16px;
+    text-align: center;
+    /* for increase the size use grow  */
+    flex-grow: 1;
+}
+
+.items1:nth-child(2) {
+    background-color: lightgreen;
+    flex-grow: 2;
+}
+
+.items2 {
+    background-color: lightcoral;
+    font-size: 24px;
+    padding: 24px;
+    margin-right: 16px;
+    margin-bottom: 16px;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.items2:nth-child(2) {
+    background-color: lightgreen;
+    flex-grow: 0;
+    /* for reduce the size use shrink */
+    flex-shrink: 1;
+}
+
+.items3 {
+    background-color: lightcoral;
+    font-size: 24px;
+    padding: 24px;
+    margin-right: 16px;
+    margin-bottom: 16px;
+    text-align: center;
+    flex-basis: 150px;
+
+}
+
+.items3:nth-child(2) {
+    background-color: lightgreen;
+    /* for change order */
+    order: -1;
+}
+
+#container4 {
+    width: 100vw;
+    height: 400px;
+    background-color: lightblue;
+    padding: 32px;
+    box-sizing: border-box;
+    margin-bottom: 24px;
+    display: flex;
+
+}
+
+.items4 {
+    background-color: lightcoral;
+    font-size: 24px;
+    padding: 24px;
+    margin-right: 16px;
+    margin-bottom: 16px;
+    text-align: center;
+    flex-basis: 150px;
+
+}
+
+/* for change the color and sze for all even and odd used this  */
+.items4:nth-child(even) {
+    background-color: lightgreen;
+    align-self: center;
+}
+
+#container5 {
+    width: 100vw;
+    height: 400px;
+    background-color: lightblue;
+    padding: 32px;
+    box-sizing: border-box;
+    margin-bottom: 24px;
+    display: flex;
+
+}
+
+.items5 {
+    background-color: lightcoral;
+    font-size: 24px;
+    padding: 24px;
+    margin-right: 16px;
+    margin-bottom: 16px;
+    text-align: center;
+    flex-basis: 150px;
+}
+
+/* change for both color and size and position */
+.items5:nth-child(odd) {
+    background-color: lightpink;
+    align-self: flex-start;
+}
+
+.items5:nth-child(even) {
+    background-color: lightgreen;
+    align-self: center;
+}
